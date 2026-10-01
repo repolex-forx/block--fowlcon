@@ -1,0 +1,14 @@
+[2026-10-01T09:45:15Z] === ENRICH ITERATION 1 START | repo=block/fowlcon sha=af5fa9ae ===
+[2026-10-01T09:45:15Z] [iter=1] PHASE START: enrich repo=block/fowlcon sha=af5fa9ae runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/af5fa9ae-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/af5fa9ae07fd22595f72d6882c2c75fd0476eed4.nq.gz
+[2026-10-01T09:45:15Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-10-01T09:45:15Z] [iter=1] AST store loaded triples=14904 load_secs=0 mem_mb=109 MB
+[2026-10-01T09:45:15Z] [iter=1] Step 2: Finding LSP targets mem_mb=109 MB
+[2026-10-01T09:45:15Z] [iter=1] LSP targets found call_sites=202 imports=0 extends=0 implements=0 secs=0
+[2026-10-01T09:45:15Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=109 MB
+[2026-10-01T09:45:15Z] [iter=1] Position index built positions=852 nodes_with_types=1054 secs=0 mem_mb=109 MB
+[2026-10-01T09:45:15Z] [iter=1] Step 3: Starting LSP resolution mem_mb=109 MB already_completed_types=[] already_completed_files=0
+[2026-10-01T09:45:15Z] [iter=1] Resolving target type target_type=call_site count=202
+[2026-10-01T09:45:22Z] [iter=1] Target type resolved target_type=call_site resolved=0 errors=2 secs=6 mem_mb=109 MB
+[2026-10-01T09:45:23Z] [iter=1] Step 5: Writing final enrichment file triples=440
+[2026-10-01T09:45:23Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/af5fa9ae07fd22595f72d6882c2c75fd0476eed4.nq.gz size_kb=4
+[2026-10-01T09:45:23Z] [iter=1] PHASE END: enrich elapsed_s=8 elapsed_min=0.1 total_triples=440
